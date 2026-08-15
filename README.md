@@ -1,6 +1,6 @@
-# ☀️ Summer Assistant
+# Assistant
 
-**Summer Assistant** est une application Linux créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
+**Assistant** est une application Linux créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
 
 ## 📌 Description
 
@@ -69,8 +69,8 @@ command -v firefox
 Clonez le projet :
 
 ```bash
-git clone https://github.com/unnread/Automatisation-Linux-Cpp.git
-cd Automatisaion-Linux-Cpp
+git clone https://github.com/unnread/Automatisation-App.git
+cd Automatisaion-App
 ```
 
 Puis lancez le script d'installation :
