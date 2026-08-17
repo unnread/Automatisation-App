@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 # Assistant
 
 **Assistant** est une application Linux créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
+=======
+#  Assistant
+
+# Francais
+
+**YAssistant** est une application Linux/Windows créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
+>>>>>>> 825b2aa (updatedd)
 
 ## 📌 Description
 
-Summer Assistant est un launcher d'applications avec une interface personnalisée.
+ yAssistant est un launcher d'applications avec une interface personnalisée.
 
 Le projet est **open source** : vous pouvez le modifier, l'améliorer et créer votre propre version.
 
@@ -25,6 +33,7 @@ Ce projet est conçu pour :
 * Arch Linux
 * Linux Mint
 * Autres distributions Linux
+* Windows
 
 ## 🔧 Personnaliser les applications
 
@@ -82,6 +91,10 @@ chmod +x install.sh
 
 Le script installe automatiquement les dépendances nécessaires selon votre distribution Linux.
 
+# Pour Windows !🪟
+
+vous devez directement ouvrir le batch. Mais cela nécesite msys2 ucrt64 !
+
 ## 🤝 Contribution
 
 Les contributions sont les bienvenues.
@@ -95,9 +108,9 @@ Vous pouvez :
 
 ## 👤 Auteur
 
-Créé par **Youness Telmoune**
+Créé par **Unnread (pseudonyme)**
 
-Projet développé en **C++ avec Qt pour Linux**.
+Projet développé en **C++ avec Qt pour Linux Windows**.
 
 ## 📜 Licence
 
@@ -112,3 +125,4 @@ Vous êtes libre de :
 
 Merci de conserver la mention de l'auteur original.
 
+# English 
