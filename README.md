@@ -1,67 +1,55 @@
-<<<<<<< HEAD
-# Assistant
+# yAssistant
 
-**Assistant** est une application Linux créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
-=======
-#  Assistant
+## 🇫🇷 Français
 
-# Francais
-
-**YAssistant** est une application Linux/Windows créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
->>>>>>> 825b2aa (updatedd)
-
-## 📌 Description
-
- yAssistant est un launcher d'applications avec une interface personnalisée.
+**yAssistant** est une application Linux/Windows créée en **C++ avec Qt**, permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
 
 Le projet est **open source** : vous pouvez le modifier, l'améliorer et créer votre propre version.
 
-Vous pouvez :
+Vous pouvez notamment :
 
 * Modifier le design
 * Changer les couleurs
 * Ajouter ou supprimer des applications
 * Ajouter de nouveaux boutons
-* Adapter le projet à votre distribution Linux
+* Adapter le projet à votre système d'exploitation
 
-## 🐧 Compatibilité
+## 💻 Compatibilité
 
-Ce projet est conçu pour :
+yAssistant est conçu pour fonctionner sur plusieurs systèmes d'exploitation :
 
-* Debian / Ubuntu
-* Fedora
-* Arch Linux
-* Linux Mint
-* Autres distributions Linux
-* Windows
+* 🐧 Debian / Ubuntu
+* 🐧 Fedora
+* 🐧 Arch Linux
+* 🐧 Linux Mint
+* 🐧 Autres distributions Linux
+* 🪟 Windows
+
+Le projet utilise **Qt**, ce qui permet d'avoir une application graphique compatible avec plusieurs systèmes.
 
 ## 🔧 Personnaliser les applications
 
-Les applications lancées par les boutons peuvent être changées facilement dans le code.
+Les applications lancées par les boutons peuvent être facilement modifiées dans le code.
 
-Exemple avec Visual Studio Code :
+Par exemple, pour lancer Visual Studio Code :
 
 ```cpp
 QProcess::startDetached("code");
 ```
 
-Si vous utilisez un autre logiciel, remplacez simplement la commande.
-
-Exemples :
+Pour lancer KDE Kate :
 
 ```cpp
 QProcess::startDetached("kate");
 ```
 
-pour KDE Kate :
+Pour lancer Gedit :
 
 ```cpp
 QProcess::startDetached("gedit");
 ```
 
-pour Gedit.
-
-Pour trouver la commande d'une application sur Linux :
+### 🐧 Trouver la commande d'une application sous Linux
 
 ```bash
 command -v nom_du_programme
@@ -73,44 +61,81 @@ Exemple :
 command -v firefox
 ```
 
-## 📦 Installation
+## 📦 Installation sous Linux
 
 Clonez le projet :
 
 ```bash
 git clone https://github.com/unnread/Automatisation-App.git
-cd Automatisaion-App
+cd Automatisation-App
 ```
 
-Puis lancez le script d'installation :
+Rendez le script d'installation exécutable :
+
+```bash
+chmod +x install.sh
+```
+
+Puis lancez-le :
+
+```bash
+./install.sh
+```
+
+Le script `install.sh` permet d'automatiser l'installation des dépendances nécessaires et la préparation du projet sous Linux.
+
+## 🪟 Installation sous Windows
+
+La version Windows utilise un script **Batch (`.bat`)** pour automatiser l'installation et/ou la compilation.
+
+### ⚠️ Prérequis : MSYS2 UCRT64
+
+Pour utiliser les scripts de compilation Windows, vous devez avoir **MSYS2 avec l'environnement UCRT64** installé.
+
+Une fois MSYS2 installé, ouvrez le terminal **MSYS2 UCRT64**.
+
+Vous pouvez ensuite lancer le fichier Batch fourni avec le projet :
+
+```bat
+install.bat
+```
+
+Le nom du fichier peut varier selon la version du projet.
+
+> Le script Batch nécessite **MSYS2 UCRT64** et les outils de compilation nécessaires.
+
+## 🛠️ Scripts d'installation
+
+### Linux
+
+Le script utilisé est :
+
+```text
+install.sh
+```
+
+Exécution :
 
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
 
-Le script installe automatiquement les dépendances nécessaires selon votre distribution Linux.
+### Windows
 
-# Pour Windows !🪟
+Le script utilisé est :
 
-vous devez directement ouvrir le batch. Mais cela nécesite msys2 ucrt64 !
+```text
+install.bat
+```
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues.
-
-Vous pouvez :
-
-* Corriger des bugs
-* Ajouter des fonctionnalités
-* Améliorer l'interface
-* Créer votre propre version
+Il doit être utilisé avec **MSYS2 UCRT64**.
 
 ## 👤 Auteur
 
-Créé par **Unnread (pseudonyme)**
+Créé par **Unnread** (pseudonyme).
 
-Projet développé en **C++ avec Qt pour Linux Windows**.
+Projet développé en **C++ avec Qt** pour Linux et Windows.
 
 ## 📜 Licence
 
@@ -124,5 +149,6 @@ Vous êtes libre de :
 * Partager vos améliorations
 
 Merci de conserver la mention de l'auteur original.
+
 
 # English 
