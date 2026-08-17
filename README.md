@@ -151,4 +151,155 @@ Vous êtes libre de :
 Merci de conserver la mention de l'auteur original.
 
 
-# English 
+# yAssistant
+
+## 🇬🇧 English
+
+**yAssistant** is a Linux/Windows application developed in **C++ with Qt**, designed to quickly launch applications from a simple and customizable graphical interface.
+
+The project is **open source**, allowing you to modify the application and create your own version.
+
+You can:
+
+* Modify the design
+* Change colors
+* Add or remove applications
+* Add new buttons
+* Adapt the project to your operating system
+
+## 💻 Compatibility
+
+yAssistant is designed to work on multiple operating systems:
+
+* 🐧 Debian / Ubuntu
+* 🐧 Fedora
+* 🐧 Arch Linux
+* 🐧 Linux Mint
+* 🐧 Other Linux distributions
+* 🪟 **Windows version**
+
+### 🪟 Windows version
+
+The Windows version requires **MSYS2 UCRT64** for installation and compilation.
+
+The Windows version uses a **Batch (`.bat`) script** to automate the installation and/or compilation process.
+
+## 🔧 Customizing Applications
+
+The applications launched by the buttons can easily be changed in the source code.
+
+For example, to launch Visual Studio Code:
+
+```cpp
+QProcess::startDetached("code");
+```
+
+To launch KDE Kate:
+
+```cpp
+QProcess::startDetached("kate");
+```
+
+To launch Gedit:
+
+```cpp
+QProcess::startDetached("gedit");
+```
+
+### 🐧 Finding an application command on Linux
+
+You can use:
+
+```bash
+command -v program_name
+```
+
+For example:
+
+```bash
+command -v firefox
+```
+
+## 📦 Installation on Linux
+
+Clone the project:
+
+```bash
+git clone https://github.com/unnread/Automatisation-App.git
+cd Automatisation-App
+```
+
+Make the installation script executable:
+
+```bash
+chmod +x install.sh
+```
+
+Then run it:
+
+```bash
+./install.sh
+```
+
+The `install.sh` script automates the installation of the required dependencies and prepares the project.
+
+## 🪟 Installation on Windows
+
+The Windows version uses a **Batch (`.bat`) script**.
+
+### ⚠️ Requirement: MSYS2 UCRT64
+
+To install and compile the Windows version, you need **MSYS2 with the UCRT64 environment**.
+
+After installing MSYS2, open the **MSYS2 UCRT64** terminal.
+
+Then run the Batch script provided with the project:
+
+```bat
+install.bat
+```
+
+> The Batch script requires **MSYS2 UCRT64** and the required compilation tools.
+
+## 🛠️ Installation Scripts
+
+### Linux
+
+```text
+install.sh
+```
+
+Run with:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+### Windows
+
+```text
+install.bat
+```
+
+The Windows script must be used with **MSYS2 UCRT64**.
+
+## 👤 Author
+
+Created by **Unnread** (pseudonym).
+
+Developed in **C++ with Qt** for Linux and Windows.
+
+## 📜 License
+
+This project is open source.
+
+You are free to:
+
+* Modify the code
+* Adapt the project
+* Create a customized version
+* Share your improvements
+
+Please keep the original author's attribution.
+
